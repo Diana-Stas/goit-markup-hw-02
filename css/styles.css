@@ -8,6 +8,7 @@
 
 body {
   font-family: var(--main-font);
+  color:var(--main-text-color)
  }
 .link {
   text-decoration: none;
@@ -15,24 +16,24 @@ body {
 .list {
   list-style: none;
 }
+/* ==============================СТИЛИ ХЕДЕРА=============================== */
 .header-logo {
 font-family:var(--secondary-font);
 font-weight: bold;
 font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
-color: #2196F3;
+color:var(--accent-color);
 }
 .header-logo-part {
  color: #000000;
 }
 .navigation-link {
-font family:var(--main-font);
 font-weight: 500;
 font size: 14px;
 line height: 1.14;
-letter spacing: 2%;
-color: var(--main-text-color);
+letter-spacing: 0.02em;
+color:var(--main-text-color)
 }
 .navigation-link:hover,
 .navigation-link:focus {
@@ -42,7 +43,6 @@ color: var(--accent-color);
     color: var(--accent-color);
 }
 .header-mail-link {
-font-family:var(--main-font);
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -54,7 +54,6 @@ color:var(--secondary-text-color);
  color: var(--accent-color);
 }
 .header-tel-link {
-font-family:var(--main-font);
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -65,12 +64,11 @@ color:var(--secondary-text-color);
 .header-tel-link:focus {
  color: var(--accent-color);
 }  
+/* ========================СТИЛИ MAIN================================== */
 .hero-title {
-font-family:var(--main-font);
 font-weight: 900;
 font-size: 44px;
 line-height: 1.36;
-
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
@@ -83,65 +81,54 @@ text-transform: uppercase;
   line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
-  cursor: pointer;
-
   /* color: #ffffff; */
 }
-
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--accent-color);
   color: #ffffff;
+  cursor: pointer;
 }
 .advantages-title {
-font-family:var(--main-font);
 font-weight: bold;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color:var(--main-text-color);
 }
 .advantages-description {
-font-family:var(--main-font);
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color:var(--secondary-text-color);
 }
 .services-subtitle {
-font-family:var(--main-font);
 font-weight: bold;
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
-color:var(--main-text-color);
 }
 .team-subtitle {
-font-family:var(--main-font);
 font-weight: bold;
 font-size: 36px;
 line-height: 1.17;
 text-align: center;
-letter-spacing: 0.03em;
-color:var(--main-text-color);  
+letter-spacing: 0.03em;  
 }
 .team-title {
-font-family:var(--main-font);
 font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
 letter-spacing: 0.03em;
-color:var(--main-text-color);
 }
 .team-description {
-font-family:var(--main-font);
 font-size: 16px;
 line-height: 1.19;
 letter-spacing: 0.03em;
 color:var(--secondary-text-color);
 }
+/* ============================== СТИЛИ FOOTER================================ */
 .footer {
 background-color:#2F303A
 }
@@ -157,16 +144,13 @@ color:var(--accent-color);
 color:#ffffff;
 }
 .adress-name {
-font-family:var(--main-font);
 font-style: normal;
 font-size: 14px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: #FFFFFF;
-
 }
 .footer-mail-link{
-font-family:var(--main-font);
 font-style: normal;
 font-size: 14px;
 line-height: 1.71;
@@ -174,7 +158,6 @@ letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
 .footer-tel-link {
-font-family:var(--main-font);
 font-style: normal;
 font-size: 14px;
 line-height: 1.71;
@@ -185,3 +168,29 @@ color: rgba(255, 255, 255, 0.6);
 .footer-tel-link:focus 
 .footer-mail-link:hover,
 .footer-mail-link:focus 
+/* ====================== Классы страницы портфолио =========================== */
+.portfolio-modal-btn {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+letter-spacing: 0.03em;
+background: #F5F4FA;
+}
+.portfolio-modal-btn:hover,
+.portfolio-modal-btn:focus {
+  background-color: var(--accent-color);
+  color:#ffffff;
+  cursor: pointer;
+}
+.projects-name {
+font-weight: bold;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+}
+.projects-description {
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.03em;
+color:var(--secondary-text-color);
+}
